@@ -10,7 +10,7 @@ function ToggleButton() {
   };
 
   return (
-    <div className="mb-20 flex flex-col justify-center items-center">
+    <div className="md:mb-20 flex flex-row md:flex-col justify-center items-center">
       <Switch onClick={handleSwithch}></Switch>
 
       {theme === "dark" ? (

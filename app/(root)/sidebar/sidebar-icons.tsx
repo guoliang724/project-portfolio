@@ -18,9 +18,7 @@ import {
   FileUserIcon,
 } from "lucide-react";
 
-const SidebarIcons = () => {
-  const pathName = usePathname();
-  const SiderBarIconsObj = [
+const SiderBarIconsObj = [
     { href: "Home", icon: <HomeIcon /> },
     { href: "AboutME", icon: <UserRoundPenIcon /> },
     { href: "Resume", icon: <FileUserIcon /> },
@@ -28,6 +26,10 @@ const SidebarIcons = () => {
     { href: "Testimonial", icon: <MessageCircleHeartIcon /> },
     { href: "Contact", icon: <HandshakeIcon /> },
   ];
+
+const SidebarIcons = () => {
+  const pathName = usePathname();
+
 
   const SideBarIcons = SiderBarIconsObj.map((icon, index) => {
     const isPathMatch = icon.href.toLowerCase() === pathName.split("/")[1];
