@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
+
+
 
 @layer utilities {
   .wrapper {
@@ -219,3 +222,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+@theme {
+  --font-abril:'Abril_Fatface',
+  --font-nunito:'nunito',
+  --font-mulish:'mulish',
+}
+

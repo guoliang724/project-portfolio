@@ -20,17 +20,33 @@ import {
   HandshakeIcon,
   FileUserIcon,
 } from "lucide-react";
+import Link from "next/link";
 
 import sonPic from "@/assets/son.jpg";
 
-import Link from "next/link";
 const SiderBarIconsObj = [
-  { href: "Home", icon: <HomeIcon size={25} /> },
-  { href: "AboutME", icon: <UserRoundPenIcon size={25} /> },
-  { href: "Resume", icon: <FileUserIcon size={25} /> },
-  { href: "Work", icon: <BriefcaseBusinessIcon size={25} /> },
-  { href: "Testimonial", icon: <MessageCircleHeartIcon size={25} /> },
-  { href: "Contact", icon: <HandshakeIcon size={25} /> },
+  { href: "#section-home", icon: <HomeIcon size={25} />, name: "Home" },
+  {
+    href: "#section-about",
+    icon: <UserRoundPenIcon size={25} />,
+    name: "About Me",
+  },
+  { href: "#section-resume", icon: <FileUserIcon size={25} />, name: "Resume" },
+  {
+    href: "#section-work",
+    icon: <BriefcaseBusinessIcon size={25} />,
+    name: "Work",
+  },
+  {
+    href: "#section-testimonial",
+    icon: <MessageCircleHeartIcon size={25} />,
+    name: "Testimonial",
+  },
+  {
+    href: "#section-contact",
+    icon: <HandshakeIcon size={25} />,
+    name: "Contact",
+  },
 ];
 function DrawerIcons() {
   return (
@@ -60,8 +76,8 @@ function DrawerIcons() {
         <DrawerFooter className="flex flex-row justify-between items-center">
           {SiderBarIconsObj.map((item, index) => (
             <DrawerClose asChild key={index}>
-              <Link key={index} href={item.href.toLowerCase()}>
-                <span> {item.icon}</span>
+              <Link key={index} href={item.href}>
+                <span>{item.icon}</span>
               </Link>
             </DrawerClose>
           ))}

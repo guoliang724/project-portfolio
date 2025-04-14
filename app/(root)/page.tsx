@@ -1,19 +1,26 @@
-import Home from "./home/page";
-import Resume from "./resume/page";
-import About from "./aboutme/page";
-import Contact from "./contact/page";
-import Testimonal from "./testimonial/page";
-import Work from "./work/page";
+import About from "../../components/main/aboutme";
+import Home from "../../components/main/home";
+import Resume from "../../components/main/resume";
+import Testimonial from "../../components/main/testimonial";
+import Work from "../../components/main/work";
+import Contact from "../../components/main/contact";
+import ScrollHashUpdater from "../../components/hooks/scrollHashUpdate";
 
-export default async function Main() {
+export default function Main() {
   return (
-    <main>
+    <main className="w-full px-11">
+      <ScrollHashUpdater />
       <Home></Home>
       <About></About>
       <Resume></Resume>
       <Work></Work>
-      <Testimonal></Testimonal>
+      <Testimonial></Testimonial>
       <Contact></Contact>
     </main>
   );
 }
+
+// #D1A9CD  #B8CAF4
+// Abril Fatface Regular
+// Nunito Regular
+// Muli

@@ -1,16 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Abril_Fatface, Nunito, Mulish } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const abril = Abril_Fatface({
   subsets: ["latin"],
+  weight: "400",
+  variable: "--font-abril",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunito = Nunito({
   subsets: ["latin"],
+  weight: ["400", "700"], // 支持多个字重
+  variable: "--font-nunito",
+  display: "swap",
+});
+
+const muli = Mulish({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-mulish",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -28,9 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${abril.variable} ${nunito.variable} ${muli.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
