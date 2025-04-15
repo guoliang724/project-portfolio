@@ -14,14 +14,12 @@ const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "700"], // 支持多个字重
   variable: "--font-nunito",
-  display: "swap",
 });
 
 const muli = Mulish({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-mulish",
-  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -38,8 +36,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${abril.variable} ${nunito.variable} ${muli.variable}`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${abril.variable} ${nunito.variable} ${muli.variable}`}
+    >
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

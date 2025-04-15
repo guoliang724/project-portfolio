@@ -18,23 +18,23 @@ export default function About() {
     { name: "TailWind", icon: tailwindLogo, duration: "over 3 years" },
     { name: "Next.js", icon: nextJsLogo, duration: "over 3 years" },
     { name: "Node.js", icon: nodejsLogo, duration: "over 3 years" },
-    { name: "ASP.NET Core", icon: netCoreLogo, duration: "over 3 years" },
+    { name: ".NET Core", icon: netCoreLogo, duration: "over 3 years" },
     { name: "Electron", icon: electronLogo, duration: "over 3 years" },
     { name: "Figma", icon: figmaLogo, duration: "over 1 year" },
     { name: "Azure", icon: azureLogo, duration: "over 2 years" },
   ];
 
   const stacksList = stacks.map((stack, index) => {
-    let width = 100,
-      height = 100;
+    let width = 60,
+      height = 60;
     if (stack.name === "Figma") {
-      width = 70;
-      height = 70;
+      width = 40;
+      height = 40;
     }
     return (
       <div
         key={index}
-        className="flex flex-col gap-3 justify-center items-center "
+        className="flex flex-col gap-3 justify-center items-center"
       >
         <div className="w-25 h-25 flex justify-center items-center">
           <Image
@@ -45,7 +45,7 @@ export default function About() {
           />
         </div>
         <div className="text-sm font-nunito">{stack.name}</div>
-        <div className="text-[12px] text-slate-600 italic">
+        <div className="text-[12px] font-mulish text-slate-600">
           {stack.duration}
         </div>
       </div>
@@ -54,9 +54,9 @@ export default function About() {
   return (
     <section
       id="section-about"
-      className="w-full min-h-[90vh] flex flex-row bg-gray-50 dark:bg-[#020618] justify-evenly items-center"
+      className="w-full min-h-[90vh] flex flex-row gap-5  justify-center items-center"
     >
-      <div className="flex flex-col gap-10 items-center justify-between w-1/3">
+      <div className="flex flex-col gap-10 items-start justify-between w-1/3">
         <div className="w-full flex flex-col gap-5 justify-center items-center">
           <div className="w-full grid grid-cols-3 gap-1 items-center font-bold font-abril text-xl tracking-wider">
             <div className="w-full h-[1px] border-t-2 border-gray-400 border-dotted" />

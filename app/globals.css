@@ -1,10 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 @custom-variant dark (&:is(.dark *));
-
-
 
 @layer utilities {
   .wrapper {
@@ -223,11 +220,14 @@
   }
 }
 
-
-
 @theme {
-  --font-abril:'Abril_Fatface',
-  --font-nunito:'nunito',
-  --font-mulish:'mulish',
+  --font-abril: "Abril_Fatface";
 }
 
+@theme {
+  --font-nunito: "Nunito", sans-serif;
+}
+
+@theme {
+  --font-mulish: "Mulish", sans-serif;
+}

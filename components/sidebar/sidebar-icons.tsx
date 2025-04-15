@@ -14,7 +14,6 @@ import {
   BriefcaseBusinessIcon,
   MessageCircleHeartIcon,
   HandshakeIcon,
-  FileUserIcon,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -26,7 +25,6 @@ const SidebarIcons = () => {
   const SiderBarIconsObj = [
     { href: "#section-home", icon: <HomeIcon />, name: "Home" },
     { href: "#section-about", icon: <UserRoundPenIcon />, name: "About Me" },
-    { href: "#section-resume", icon: <FileUserIcon />, name: "Resume" },
     { href: "#section-work", icon: <BriefcaseBusinessIcon />, name: "Work" },
     {
       href: "#section-testimonial",
@@ -65,7 +63,7 @@ const SidebarIcons = () => {
             <div
               onClick={() => {
                 setHash(icon.href);
-                router.push(icon.href);
+                router.push("/" + icon.href);
               }}
               className={classnames}
             >

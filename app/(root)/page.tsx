@@ -1,6 +1,6 @@
 import About from "../../components/main/aboutme";
 import Home from "../../components/main/home";
-import Resume from "../../components/main/resume";
+
 import Testimonial from "../../components/main/testimonial";
 import Work from "../../components/main/work";
 import Contact from "../../components/main/contact";
@@ -12,7 +12,7 @@ export default function Main() {
       <ScrollHashUpdater />
       <Home></Home>
       <About></About>
-      <Resume></Resume>
+
       <Work></Work>
       <Testimonial></Testimonial>
       <Contact></Contact>
