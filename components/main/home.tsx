@@ -20,7 +20,7 @@ export default function Home() {
       id="section-home"
       className="bg-[#B8CAF4] dark:bg-[#D1A9CD] grid grid-cols-1 md:grid-cols-3  justify-center items-center min-h-[90vh] relative"
     >
-      <div className="hidden absolute top-6 right-48 md:flex flex-row justify-between items-center gap-8 font-nunito text-sm">
+      <div className="hidden absolute top-6 right-36 md:flex flex-row justify-between items-center gap-12 font-mulish text-xl">
         <Link style={{ background }} href="https://github.com/guoliang724">
           Github
         </Link>
@@ -45,14 +45,14 @@ export default function Home() {
           <br />
           and <span style={{ background: background }}>.Net</span> Developer
         </div>
-        <div className="text-[14px] font-nunito text-wrap w-3/5">
+        <div className="text-base font-nunito text-wrap w-3/5">
           I design and develop services for customers of all sizes, specializing
           in creating stylish, modern websites, web services and online stores
         </div>
         <div className="relative">
           <Button
             onClick={handleClickMyWork}
-            className="font-mulish text-[12px] cursor-pointer z-10 w-30 rounded-none flex justify-center items-center bg-gray-800 dark:bg-white shadow-md "
+            className="font-mulish text-sm cursor-pointer z-10 w-30 rounded-none flex justify-center items-center bg-gray-800 dark:bg-white shadow-md "
           >
             see my work
           </Button>
