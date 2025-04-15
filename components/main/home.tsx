@@ -20,7 +20,7 @@ export default function Home() {
       id="section-home"
       className="bg-[#B8CAF4] dark:bg-[#D1A9CD] grid grid-cols-1 md:grid-cols-3  justify-center items-center min-h-[90vh] relative"
     >
-      <div className="hidden absolute top-2 right-48 md:flex flex-row justify-between items-center gap-8 font-nunito text-sm">
+      <div className="hidden absolute top-6 right-48 md:flex flex-row justify-between items-center gap-8 font-nunito text-sm">
         <Link style={{ background }} href="https://github.com/guoliang724">
           Github
         </Link>
@@ -55,7 +55,7 @@ export default function Home() {
             className="font-mulish text-[12px] cursor-pointer z-10 w-30 rounded-none flex justify-center items-center bg-gray-800 dark:bg-white shadow-md "
           >
             see my work
-          </Button>    
+          </Button>
           <div className="absolute left-[5px] top-2 border-2  border-gray-800 w-30 h-8 z-0 dark:border-white pointer-events-none"></div>
         </div>
         <div className="w-[2px] h-28 bg-black dark:bg-white absolute -bottom-8 right-1/4">

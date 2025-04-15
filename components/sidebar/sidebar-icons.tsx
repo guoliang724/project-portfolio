@@ -12,8 +12,8 @@ import {
   HomeIcon,
   UserRoundPenIcon,
   BriefcaseBusinessIcon,
-  MessageCircleHeartIcon,
   HandshakeIcon,
+  ListCheckIcon,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -27,9 +27,9 @@ const SidebarIcons = () => {
     { href: "#section-about", icon: <UserRoundPenIcon />, name: "About Me" },
     { href: "#section-work", icon: <BriefcaseBusinessIcon />, name: "Work" },
     {
-      href: "#section-testimonial",
-      icon: <MessageCircleHeartIcon />,
-      name: "Testimonial",
+      href: "#section-task",
+      icon: <ListCheckIcon />,
+      name: "What I Do",
     },
     { href: "#section-contact", icon: <HandshakeIcon />, name: "Contact" },
   ];

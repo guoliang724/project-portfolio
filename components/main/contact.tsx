@@ -4,7 +4,27 @@ export default function Contact() {
       contact contact ++ <br></br>Lorem ipsum dolor sit amet consectetur
       adipisicing elit. Exercitationem illum distinctio dolore quas rerum, qui
       accusantium reprehenderit pariatur, beatae assumenda aspernatur unde ipsam
-      quisquam possimus facilis dolor molestias optio tempora?
+      quisquam possimus facilis dolor molestias optio tempora? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Exercitationem illum distinctio
+      dolore quas rerum, qui accusantium reprehenderit pariatur, beatae
+      assumenda aspernatur unde ipsam quisquam possimus facilis dolor Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illum
+      distinctio dolore quas rerum, qui accusantium reprehenderit pariatur,
+      beatae assumenda aspernatur unde ipsam quisquam possimus facilis dolor
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      illum distinctio dolore quas rerum, qui accusantium reprehenderit
+      pariatur, beatae assumenda aspernatur unde ipsam quisquam possimus facilis
+      dolor Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Exercitationem illum distinctio dolore quas rerum, qui accusantium
+      reprehenderit pariatur, beatae assumenda aspernatur unde ipsam quisquam
+      possimus facilis dolor Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Exercitationem illum distinctio dolore quas rerum, qui accusantium
+      reprehenderit pariatur, beatae assumenda aspernatur unde ipsam quisquam
+      possimus facilis dolor
+      Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Exercitationem illum distinctio dolore quas rerum, qui
+      accusantium reprehenderit pariatur, beatae assumenda aspernatur unde ipsam
+      quisquam possimus facilis dolor 
     </section>
   );
 }
