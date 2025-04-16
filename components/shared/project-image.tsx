@@ -110,7 +110,7 @@ function ProjectImage({
         </div>
       </div>
 
-      <div className="relative -top-10 left-10 z-30 mx-auto border-slate-100  bg-slate-100 border-[8px] rounded-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+      <div className="relative -top-10 left-4 md:left-10 z-30 mx-auto border-slate-100  bg-slate-100 border-[8px] rounded-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
         <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white">
           <Image
             src={image[1]}

@@ -36,7 +36,7 @@ export default function About() {
         key={index}
         className="flex flex-col md:gap-x-2 justify-center items-center"
       >
-        <div className="md:w-25 md:h-25  w-8 h-8 flex justify-center items-center mb-3 md:mb-0">
+        <div className="md:w-25 md:h-15  w-8 h-4 flex justify-center items-center mb-3 md:mb-0">
           <Image
             src={stack.icon}
             width={width}
@@ -44,7 +44,7 @@ export default function About() {
             alt="stack icon"
           />
         </div>
-        <div className="text-sm md:text-base font-nunito font-semibold text-gray-500">{stack.name}</div>
+        <div className="text-sm md:text-base font-nunito font-semibold">{stack.name}</div>
         <div className="text-xs md:text-[14px] font-mulish text-gray-400 text-center">
           {stack.duration}
         </div>
@@ -299,7 +299,7 @@ export default function About() {
           <div className="text-center text-base md:text-xl tracking-wider font-bold font-abril">Tech Stacks</div>
           <div className="w-full h-[1px] border-t-2 border-gray-400 border-dotted" />
         </div>
-        <div className="grid md:grid-cols-5 grid-cols-3 md:gap-x-6 md:gap-y-3  gap-x-8 gap-y-6" >{stacksList}</div>
+        <div className="grid md:grid-cols-5 grid-cols-3 md:gap-x-6 md:gap-y-3 mt-6 md:mt-0 gap-x-8 gap-y-6" >{stacksList}</div>
       </div>
     </section>
   );

@@ -8,6 +8,8 @@ export default function ScrollHashUpdater() {
   const pathname = usePathname();
 
   useEffect(() => {
+    if (window.innerWidth <= 768) return;
+
     const sections = document.querySelectorAll("section[id]");
 
     const observer = new IntersectionObserver(

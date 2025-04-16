@@ -7,7 +7,7 @@ interface ProjectDescriptionProps {
   projectDescription: string;
   link: string;
   buttonText: string;
-  direction:string
+  direction: string;
 }
 
 function ProjectDescription({
@@ -16,7 +16,7 @@ function ProjectDescription({
   projectName,
   link,
   buttonText,
-  direction
+  direction,
 }: ProjectDescriptionProps) {
   const colorPannel = [
     {
@@ -59,15 +59,19 @@ function ProjectDescription({
   const directionClass = direction === "left" ? "order-1" : "-order-1";
 
   return (
-    <div className={`${directionClass} flex flex-col gap-2 justify-center items-start`}>
+    <div
+      className={`${directionClass} flex flex-col gap-2 justify-center items-start`}
+    >
       <div className="uppercase text-gray-400 tracking-widest text-[10px] md:text-[12px]">
         Latest work
       </div>
       <div className="text-lg md:text-2xl font-bold font-abril tracking-wider mb-3">
         {projectName}
       </div>
-      <div className="font-nunito text-xs md:text-sm mb-7 flex flex-wrap gap-x-1 gap-y-2">{badges}</div>
-      <div className="text-xs md:text-sm tracking-wide font-mulish mb-5 md:mb-20 -mx-3 md:-mx-0">
+      <div className="font-mulish text-xs md:text-sm mb-7 flex flex-wrap gap-x-1 gap-y-2">
+        {badges}
+      </div>
+      <div className="text-xs md:text-sm tracking font-nunito mb-5 md:mb-20 -mx-3 md:-mx-0">
         {projectDescription}
       </div>
       <Seemywork link={link} text={buttonText} />

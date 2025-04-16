@@ -31,7 +31,7 @@ export default function Home() {
           LinkedIn
         </Link>
       </div>
-      <div className="px-2 md:p-0 md:col-span-2 flex flex-col justify-start items-start gap-4 md:pl-28 md:gap-8">
+      <div className="px-5 md:p-0 md:col-span-2 flex flex-col justify-start items-start gap-4 md:pl-28 md:gap-8">
         <div className="text-2xl md:text-3xl font-bold font-abril tracking-wider">
           Hi, I&rsquo;m Leon,{" "}
           <span

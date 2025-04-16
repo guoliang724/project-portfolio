@@ -52,7 +52,7 @@ function DrawerIcons() {
           <MenuIcon />
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="h-1/3 max-w-sm my-auto">
+      <DrawerContent className="h-auto max-w-sm my-auto">
         <DrawerHeader>
           <DrawerTitle className="flex justify-center">
             Welcome to Leon&apos;s Portfolio
