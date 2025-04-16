@@ -12,10 +12,10 @@ export default function Testimonial() {
   return (
     <section
       id="section-task"
-      className="min-h-[80vh] h-[80vh] bg-sky-50 dark:bg-[#D1A9CD] my-10"
+      className="md:min-h-[80vh] md:h-[80vh] bg-sky-50 dark:bg-[#D1A9CD]  md:my-10"
     >
-      <div className="w-full h-full grid grid-cols-2 grid-rows-2 gap-x-20 gap-y-10 p-14 justify-start items-start">
-        <div className="text-5xl font-bold font-abril tracking-wider">
+      <div className="w-full h-full grid grid-cols-1 md:grid-cols-2  md:grid-rows-2 gap-x-20 gap-y-10 p-10 md:p-14 justify-start items-start">
+        <div className="text-2xl md:text-4xl font-bold font-abril tracking-wider">
           What{" "}
           <span
             style={{
@@ -27,8 +27,8 @@ export default function Testimonial() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <div className="font-nunito text-3xl font-bold tracking-wide">Design</div>
-          <div className="font-mulish text-lg">
+          <div className="font-nunito text-lg md:text-2xl font-bold tracking-wide">Design</div>
+          <div className="font-mulish text-xs md:text-lg">
             I design beautiful and powerful websites for modern business. Any
             business today needs a website that winds customers&apos; trust and
             helps you do your business well. I make sure your website is up tp
@@ -36,15 +36,15 @@ export default function Testimonial() {
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <div className="font-nunito text-3xl font-bold tracking-wide">Development</div>
-          <div className="font-mulish text-lg">
+          <div className="font-nunito text-lg md:text-2xl font-bold tracking-wide">Development</div>
+          <div className="font-mulish text-xs md:text-lg">
             I build websites in the latest technologies and frameworks where I
             can create responsive, powerful and fully custom websites.
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <div className="font-nunito text-3xl font-bold tracking-wide">Deployment</div>
-          <div className="font-mulish text-lg">
+          <div className="font-nunito text-lg md:text-2xl font-bold tracking-wide">Deployment</div>
+          <div className="font-mulish text-xs md:text-lg">
             I deploy fast, secure, and reliable websites using modern cloud
             platforms. A great website is only as good as its performance and
             availability. I use services like Azure and Vercel to ensure your

@@ -7,7 +7,7 @@ import DrawerIcons from "./drawer-icons";
 
 function HeaderSmallScreen() {
   return (
-    <div className="w-full flex flex-row justify-around items-center md:hidden">
+    <div className="sticky z-50 top-4 w-full flex flex-row justify-around items-center md:hidden">
       <Image
         src={LeonLogo}
         className="inline-block"

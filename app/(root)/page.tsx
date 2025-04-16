@@ -8,7 +8,7 @@ import ScrollHashUpdater from "../../components/hooks/scrollHashUpdate";
 
 export default function Main() {
   return (
-    <main className="w-full px-11">
+    <main className="w-full md:px-11">
       <ScrollHashUpdater />
       <Home></Home>
       <About></About>

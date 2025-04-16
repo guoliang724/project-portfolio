@@ -60,7 +60,7 @@ export default function Work() {
     return (
       <div
         key={index}
-        className={`w-full grid grid-cols-2 justify-center gap-8 ${background}`}
+        className={`my-8 w-full grid grid-cols-1 md:grid-cols-2 justify-center gap-8 ${background}`}
       >
         <div className={`flex justify-center items-center p-10`}>
           <ProjectDescription
@@ -82,7 +82,7 @@ export default function Work() {
   });
 
   return (
-    <section id="section-work" className="min-h-[90vh] flex flex-col gap-12">
+    <section id="section-work" className="flex flex-col gap-4 md:gap-12">
       {projectsComponents}
     </section>
   );

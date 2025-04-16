@@ -16,9 +16,8 @@ import {
   HomeIcon,
   UserRoundPenIcon,
   BriefcaseBusinessIcon,
-  MessageCircleHeartIcon,
   HandshakeIcon,
-  FileUserIcon,
+  ListCheckIcon,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -31,17 +30,14 @@ const SiderBarIconsObj = [
     icon: <UserRoundPenIcon size={25} />,
     name: "About Me",
   },
-  { href: "#section-resume", icon: <FileUserIcon size={25} />, name: "Resume" },
+
   {
     href: "#section-work",
     icon: <BriefcaseBusinessIcon size={25} />,
     name: "Work",
   },
-  {
-    href: "#section-testimonial",
-    icon: <MessageCircleHeartIcon size={25} />,
-    name: "Testimonial",
-  },
+  { href: "#section-task", icon: <ListCheckIcon size={25} />, name: "Task" },
+
   {
     href: "#section-contact",
     icon: <HandshakeIcon size={25} />,

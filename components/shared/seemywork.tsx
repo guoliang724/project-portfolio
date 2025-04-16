@@ -16,7 +16,7 @@ function Seemywork({ link,text }: SeemyworkProps) {
     <div className="relative">
       <Button
         onClick={handleClickMyWork}
-        className="text-[12px] cursor-pointer z-10 w-30 rounded-none flex justify-center items-center bg-gray-800 dark:bg-white shadow-md "
+        className="text-[12px] md:text-[12px] cursor-pointer z-10 w-30 rounded-none flex justify-center items-center bg-gray-800 dark:bg-white shadow-md "
       >
         {text}
       </Button>
