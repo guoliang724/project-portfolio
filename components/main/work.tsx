@@ -82,7 +82,7 @@ export default function Work() {
   });
 
   return (
-    <section id="section-work" className="flex flex-col gap-4 md:gap-12">
+    <section id="section-work" className="flex flex-col gap-4">
       {projectsComponents}
     </section>
   );

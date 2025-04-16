@@ -60,10 +60,10 @@ function ProjectDescription({
 
   return (
     <div className={`${directionClass} flex flex-col gap-2 justify-center items-start`}>
-      <div className="uppercase text-gray-400 tracking-widest text-[10px] md:text-[13px]">
+      <div className="uppercase text-gray-400 tracking-widest text-[10px] md:text-[12px]">
         Latest work
       </div>
-      <div className="text-lg md:text-3xl font-bold font-abril tracking-wider mb-3">
+      <div className="text-lg md:text-2xl font-bold font-abril tracking-wider mb-3">
         {projectName}
       </div>
       <div className="font-nunito text-xs md:text-sm mb-7 flex flex-wrap gap-x-1 gap-y-2">{badges}</div>

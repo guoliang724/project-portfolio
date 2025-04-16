@@ -20,7 +20,7 @@ export default function Home() {
       id="section-home"
       className="bg-[#B8CAF4] dark:bg-[#D1A9CD] grid grid-cols-1 md:grid-cols-3  justify-center items-center min-h-[50vh] md:min-h-[90vh] relative my-10 md:my-auto"
     >
-      <div className="hidden absolute top-6 right-36 md:flex flex-row justify-between items-center gap-12 font-mulish text-xl">
+      <div className="hidden absolute top-6 right-36 md:flex flex-row justify-between items-center gap-12 font-mulish text-sm">
         <Link style={{ background }} href="https://github.com/guoliang724">
           Github
         </Link>
@@ -32,7 +32,7 @@ export default function Home() {
         </Link>
       </div>
       <div className="px-2 md:p-0 md:col-span-2 flex flex-col justify-start items-start gap-4 md:pl-28 md:gap-8">
-        <div className="text-2xl md:text-4xl font-bold font-abril tracking-wider">
+        <div className="text-2xl md:text-3xl font-bold font-abril tracking-wider">
           Hi, I&rsquo;m Leon,{" "}
           <span
             style={{
@@ -45,14 +45,14 @@ export default function Home() {
           <br />
           and <span style={{ background: background }}>.Net</span> Developer
         </div>
-        <div className="text-xs md:text-base font-nunito mb-5 text-wrap md:w-3/5">
+        <div className="text-xs md:text-sm font-nunito mb-5 text-wrap md:w-3/5">
           I design and develop services for customers of all sizes, specializing
           in creating stylish, modern websites, web services and online stores
         </div>
         <div className="relative">
           <Button
             onClick={handleClickMyWork}
-            className="font-mulish text-[12px] md:text-sm cursor-pointer z-10 w-30 rounded-none flex justify-center items-center bg-gray-800 dark:bg-white shadow-md "
+            className="font-mulish text-[12px] md:text-[14px] cursor-pointer z-10 w-30 rounded-none flex justify-center items-center bg-gray-800 dark:bg-white shadow-md "
           >
             see my work
           </Button>
