@@ -8,14 +8,39 @@ import esayshoptwo from "@/assets/esayshop-2.png";
 import esayshopthree from "@/assets/esayshop-3.png";
 import flappyBirdone from "@/assets/flappy bird-1.png";
 import flappyBirdtwo from "@/assets/flappy_phone.png";
+import childfriendlyone from "@/assets/ChildFriendly1.png";
+import childfriendlytwo from "@/assets/ChildFriendly2.png";
+import childfriendlythree from "@/assets/ChildFriendly3.png";
+import childfriendlyfour from "@/assets/ChildFriendly4.png";
 
 export default function Work() {
   const projects = [
     {
       projectDescription:
+        "This is a collaborative project — an all-in-one childcare management SaaS designed to streamline operations, reduce administrative hours, and enhance care quality. I contributed to the design and development of modules for daycare operations, staff management, and accounting.",
+      projectName: "ChildFriendly Pro",
+      tags: ["Vue", "Quasar", ".NET Core", "Azure", "Vite", "Cosmos DB"],
+      link: "https://childfriendlypro.com",
+      image: [
+        childfriendlyone,
+        childfriendlytwo,
+        childfriendlythree,
+        childfriendlyfour,
+      ],
+      buttonText: "Learn more about it",
+    },
+    {
+      projectDescription:
         "This is a team work project. It is a SASS which focuses on teaching scenarios and facilitates interactive teaching through collaborative classrooms. My responsibility was to design and implement remote audio and video features as well as the viewport following feature.",
       projectName: "Bytello Class Pro",
-      tags: ["React", "Typescript", "Node.js", "Electron"],
+      tags: [
+        "React",
+        "Typescript",
+        "Node.js",
+        "Electron",
+        "Webpack",
+        "Monorepo",
+      ],
       link: "https://www.bytello.com/classpro",
       image: classpro,
       buttonText: "Experience it now",
@@ -24,7 +49,7 @@ export default function Work() {
       projectDescription:
         "EasyClean is a sleek online store designed for users to easily browse, search, and purchase cleaning products. It offers a smooth shopping experience with features like user registration and login, product filtering, shopping cart functionality, and a secure checkout flow. The site also includes an admin dashboard for managing products and categories, along with modern animations for an engaging and responsive user interface.",
       projectName: "eCommerce website for clearning",
-      tags: ["Asp.net Web Api", "Typescript", "React", "Mysql", "Stripe"],
+      tags: [".Net Core Web Api", "Typescript", "React", "Mysql", "Stripe"],
       link: "https://esayclean.azurewebsites.net/",
       image: [esaycleanone, esaycleantwo],
       buttonText: "Visit it now",

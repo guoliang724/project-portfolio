@@ -31,7 +31,7 @@ export default function Testimonial() {
           <div className="font-nunito text-xs md:text-sm">
             I design beautiful and powerful websites for modern business. Any
             business today needs a website that winds customers&apos; trust and
-            helps you do your business well. I make sure your website is up tp
+            helps you do your business well. I make sure your website is up to
             that standard
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Testimonial() {
             I deploy fast, secure, and reliable websites using modern cloud
             platforms. A great website is only as good as its performance and
             availability. I use services like Azure and Vercel to ensure your
-            site is live, optimized, and always ready for your users—no matter
+            site is live, optimized, and always ready for your users — no matter
             where they are.
           </div>
         </div>

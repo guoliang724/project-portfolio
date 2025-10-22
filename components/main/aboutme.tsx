@@ -14,11 +14,11 @@ import nextJsLogo from "@/assets/nextjs.svg";
 export default function About() {
   const stacks = [
     { name: "React", icon: reactLogo, duration: "over 3 years" },
-    { name: "Vue", icon: vueLogo, duration: "over 3 years" },
-    { name: "TailWind", icon: tailwindLogo, duration: "over 3 years" },
-    { name: "Next.js", icon: nextJsLogo, duration: "over 3 years" },
+    { name: "Vue", icon: vueLogo, duration: "over 2 years" },
+    { name: "TailWind", icon: tailwindLogo, duration: "over 2 years" },
+    { name: "Next.js", icon: nextJsLogo, duration: "over 2 years" },
     { name: "Node.js", icon: nodejsLogo, duration: "over 3 years" },
-    { name: ".NET Core", icon: netCoreLogo, duration: "over 3 years" },
+    { name: ".NET Core", icon: netCoreLogo, duration: "over 2 years" },
     { name: "Electron", icon: electronLogo, duration: "over 3 years" },
     { name: "Figma", icon: figmaLogo, duration: "over 1 year" },
     { name: "Azure", icon: azureLogo, duration: "over 2 years" },

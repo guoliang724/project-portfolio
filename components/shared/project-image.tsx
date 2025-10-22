@@ -96,6 +96,71 @@ function ProjectImage({
     </div>
   );
 
+  const fourthComponent = Array.isArray(image) && image.length === 4 && (
+    <div className="relative w-2/3 mx-auto shadow-2xl">
+      {/* 背景层 */}
+      <div className="bg-sky-50 absolute z-10 top-0 left-0 w-full h-full rounded-xl" />
+
+      {/* 图片容器 */}
+      <div className="relative grid grid-cols-2 gap-6 z-20">
+        {/* 第一行 */}
+        <div className="relative flex justify-end">
+          <div className="transform -rotate-4 -translate-x-6 -translate-y-4 z-30">
+            <Image
+              className="shadow-lg rounded-xl"
+              src={image[0]}
+              width={280}
+              height={280}
+              alt="image1"
+            />
+          </div>
+        </div>
+        <div className="relative flex justify-start">
+          <div className="transform rotate-3 translate-x-4 -translate-y-6 z-20">
+            <Image
+              className="shadow-lg rounded-xl"
+              src={image[1]}
+              width={280}
+              height={280}
+              alt="image2"
+            />
+          </div>
+        </div>
+
+        {/* 第二行 */}
+        <div className="relative flex justify-end">
+          <div className="transform rotate-2 -translate-x-4 translate-y-2 z-40">
+            <Image
+              className="shadow-lg rounded-xl"
+              src={image[2]}
+              width={280}
+              height={280}
+              alt="image3"
+            />
+          </div>
+        </div>
+        <div className="relative flex justify-start">
+          <div className="transform -rotate-3 translate-x-2 translate-y-4 z-30">
+            <Image
+              className="shadow-lg rounded-xl"
+              src={image[3]}
+              width={280}
+              height={280}
+              alt="image4"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* 点阵背景 */}
+      <div
+        className={`grid grid-cols-8 z-0 gap-1 absolute ${dotdirectionClass}`}
+      >
+        {dotsComponent}
+      </div>
+    </div>
+  );
+
   const flappyBirdComponent = Array.isArray(image) && slot && (
     <div className="relative rounded-xl">
       <div className="relative z-20  mx-auto border-slate-100  bg-slate-100 border-[8px] rounded-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
@@ -136,6 +201,7 @@ function ProjectImage({
       {singleComponent}
       {doubleComponent}
       {tripleComponent}
+      {fourthComponent}
       {flappyBirdComponent}
     </div>
   );
