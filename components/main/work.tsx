@@ -31,7 +31,7 @@ export default function Work() {
     },
     {
       projectDescription:
-        "This is a team work project. It is a SASS which focuses on teaching scenarios and facilitates interactive teaching through collaborative classrooms. My responsibility was to design and implement remote audio and video features as well as the viewport following feature.",
+        "This is a team work project. It is a SaaS which focuses on teaching scenarios and facilitates interactive teaching through collaborative classrooms. My responsibility was to design and implement remote audio and video features as well as the viewport following feature.",
       projectName: "Bytello Class Pro",
       tags: [
         "React",
