@@ -1,11 +1,21 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import styles from "./index.module.scss";
+
+import { useEffect, useRef } from "react";
 
 import { useTheme } from "next-themes";
+import gsap from "gsap";
 import Link from "next/link";
 
 export default function Home() {
   const { theme } = useTheme();
+  const textRef = useRef<HTMLDivElement>(null);
+  const content =
+    "I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.";
+
+  const rGithub = useRef<HTMLSpanElement>(null);
+  const rLinkedIn = useRef<HTMLSpanElement>(null);
 
   const isDark = theme === "dark" ? true : false;
   const background = isDark
@@ -15,6 +25,37 @@ export default function Home() {
   const handleClickMyWork = () => {
     location.hash = "#section-work";
   };
+
+  useEffect(() => {
+    const el = textRef.current!;
+    const totalChars = content.length;
+
+    el.style.setProperty("--ch", "0");
+
+    gsap.to(el, {
+      duration: totalChars * 0.2,
+      ease: "bounce.inOut",
+      "--ch": totalChars,
+      onUpdate: () => {
+        const chVal = Number(gsap.getProperty(el, "--ch"));
+        el.textContent = content.slice(0, Math.floor(chVal));
+      },
+    });
+  }, []);
+
+  useEffect(() => {
+    const githubRef = rGithub.current!;
+    const linedInRef = rLinkedIn.current!;
+
+    gsap.to([githubRef, linedInRef], {
+      scale: 1.1,
+      duration: 1,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true,
+    });
+  }, []);
+
   return (
     <section
       id="section-home"
@@ -22,18 +63,22 @@ export default function Home() {
     >
       <div className="hidden absolute top-6 right-36 md:flex flex-row justify-between items-center gap-12 font-mulish text-sm">
         <Link style={{ background }} href="https://github.com/guoliang724">
-          Github
+          <span ref={rGithub} className="inline-block">
+            Github
+          </span>
         </Link>
         <Link
           style={{ background }}
           href="https://www.linkedin.com/in/leon-zhang-cfp/"
         >
-          LinkedIn
+          <span ref={rLinkedIn} className="inline-block">
+            LinkedIn
+          </span>
         </Link>
       </div>
       <div className="px-5 md:p-0 md:col-span-2 flex flex-col justify-start items-start gap-4 md:pl-28 md:gap-8">
         <div className="text-2xl md:text-3xl font-bold font-abril tracking-wider">
-          Hi, I&rsquo;m Leon,{" "}
+          Hi, I’m Leon,{" "}
           <span
             style={{
               background: background,
@@ -45,9 +90,9 @@ export default function Home() {
           <br />
           and <span style={{ background: background }}>.Net</span> Developer
         </div>
-        <div className="text-xs md:text-sm font-nunito mb-5 text-wrap md:w-3/5">
-          I design and develop services for customers of all sizes, specializing
-          in creating stylish, modern websites, web services and online stores
+        <div className="relative text-xs md:text-sm font-nunito mb-5 text-wrap md:w-3/5">
+          <div ref={textRef} className={styles.typingText}></div>
+          <div className={styles.placeholder}>{content}</div>
         </div>
         <div className="relative">
           <Button

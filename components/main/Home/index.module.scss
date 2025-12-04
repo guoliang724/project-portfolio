@@ -1,0 +1,38 @@
+.typingText {
+  position: relative;
+  white-space: pre;
+  text-wrap: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: normal;
+}
+
+/* 光标 */
+.typingText::after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 0.5rem;
+  background: white;
+  margin-left: 4px;
+  vertical-align: baseline;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.placeholder {
+  visibility: hidden;
+  white-space: normal;
+}
