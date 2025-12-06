@@ -8,6 +8,8 @@ import { useTheme } from "next-themes";
 import gsap from "gsap";
 import Link from "next/link";
 
+const INTERVAL = 40;
+
 export default function Home() {
   const { theme } = useTheme();
   const textRef = useRef<HTMLDivElement>(null);
@@ -32,7 +34,9 @@ export default function Home() {
 
     el.style.setProperty("--ch", "0");
 
-    gsap.to(el, {
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: INTERVAL });
+
+    tl.to(el, {
       duration: totalChars * 0.2,
       ease: "bounce.inOut",
       "--ch": totalChars,
@@ -41,7 +45,11 @@ export default function Home() {
         el.textContent = content.slice(0, Math.floor(chVal));
       },
     });
-  }, []);
+
+    return () => {
+      tl.kill();
+    };
+  }, [content]);
 
   useEffect(() => {
     const githubRef = rGithub.current!;
