@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import { gsap } from "gsap";
-import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 
 import reactLogo from "@/assets/atom.png";
 import vueLogo from "@/assets/Vue.png";
@@ -13,7 +14,10 @@ import netCoreLogo from "@/assets/NET Core.png";
 import tailwindLogo from "@/assets/tailwind.svg";
 import nextJsLogo from "@/assets/nextjs.svg";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function TechStack() {
+  const divRef = useRef<HTMLDivElement>(null);
   const stacks = [
     { name: "React", icon: reactLogo, duration: "over 3 years" },
     { name: "Vue", icon: vueLogo, duration: "over 2 years" },
@@ -62,19 +66,25 @@ export default function TechStack() {
 
     gsap.fromTo(
       items,
-      { opacity: 0, y: 40 },
+      { opacity: 0, y: 40 }, // 初始状态
       {
         opacity: 1,
         y: 0,
         duration: 2,
         stagger: 0.7,
         ease: "back.out(1.7)",
-        repeat: -1,
-        yoyo: true,
-        repeatDelay: 1.5,
+        scrollTrigger: {
+          trigger: divRef.current,
+          start: "top 80%",
+          toggleActions: "play reverse play reverse", // 滑入播放，滑出不反向
+        },
       }
     );
   }, []);
 
-  return StacksList;
+  return (
+    <div className="grid md:grid-cols-5 grid-cols-3 md:gap-x-6 md:gap-y-3 mt-6 md:mt-0 gap-x-8 gap-y-6" ref={divRef}>
+      {StacksList}
+    </div>
+  );
 }
