@@ -1,11 +1,12 @@
-import type { NextConfig } from "next";
-
-/** @type {import('next').NextConfig} */
-const nextConfig: NextConfig = {
+const nextConfig = {
   /* config options here */
-  images: {
-    domains: ["flowbite.s3.amazonaws.com", "flowbite.s3.amazonaws.com"],
-  },
+  remotePatterns: [
+    {
+      protocol: "https",
+      hostname: "flowbite.s3.amazonaws.com",
+      pathname: "**",
+    },
+  ],
 };
 
 export default nextConfig;
