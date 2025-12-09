@@ -76,10 +76,10 @@ export default function Work() {
   ];
 
   const projectsComponents = projects.map((project, index) => {
-    let dirction = "left";
+    let direction = "left";
     let background = "bg-sky-50 dark:bg-[#D1A9CD]";
     if (index % 2 === 1) {
-      dirction = "right";
+      direction = "right";
       background = "";
     }
     return (
@@ -94,12 +94,12 @@ export default function Work() {
             tags={project.tags}
             link={project.link}
             buttonText={project.buttonText}
-            direction={dirction}
+            direction={direction}
           ></ProjectDescription>
         </div>
         <ProjectImage
           image={project.image}
-          direction={dirction}
+          direction={direction}
           slot={project.slot}
         ></ProjectImage>
       </div>
